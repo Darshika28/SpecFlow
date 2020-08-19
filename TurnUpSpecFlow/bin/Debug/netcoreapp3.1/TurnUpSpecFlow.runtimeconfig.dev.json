@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\dhava\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\dhava\\.nuget\\packages"
+    ]
+  }
+}

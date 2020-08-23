@@ -8,8 +8,6 @@ namespace TurnUpSpecFlow.Pages
 {
     public class HomePage : BasePage
     {
-      //  private IWebDriver driver;
-
         public HomePage(IWebDriver driver) : base(driver)
         {
         }
@@ -30,7 +28,7 @@ namespace TurnUpSpecFlow.Pages
         }
                
         //Navigate to Employee Page
-        public void NavigateToEmployee()
+        public void NavigateToEmployee(IWebDriver driver)
         {
             // Find and Click on administration 
             IWebElement admindrop = driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a"));
@@ -61,6 +59,7 @@ namespace TurnUpSpecFlow.Pages
         //Function of finding and click on last page
         public void LastPage(IWebDriver driver)
         {
+            Thread.Sleep(3000);
             IWebElement lastpg = driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[4]/a[4]"));
             lastpg.Click();
 
